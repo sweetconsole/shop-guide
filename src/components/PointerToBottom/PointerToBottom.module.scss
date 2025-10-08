@@ -1,0 +1,26 @@
+@use "../../assets/styles/variables";
+
+.pointer {
+	position: absolute;
+	bottom: -26px;
+	left: 50%;
+	z-index: 3;
+	display: flex;
+	gap: 24px;
+	padding: 17px 60px;
+	background-color: variables.$color-primary;
+	border-radius: 15px;
+	transform: translateX(-50%);
+}
+
+.text {
+	font-family: variables.$font-family-primary;
+	font-size: 14px;
+	font-weight: variables.$font-weight-semi-bold;
+	line-height: 17px;
+	color: white;
+	letter-spacing: -0.05em;
+}
+
+.arrow {
+}

@@ -1,0 +1,138 @@
+@use "../../assets/styles/variables";
+
+.footer {
+	padding-top: 43px;
+	padding-bottom: 43px;
+	background-image: url("../../assets/images/bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	@media (width <= 1300px) {
+		padding-top: 40px;
+		padding-bottom: 41px;
+	}
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1290px;
+	margin: 0 auto;
+
+	@media (width <= 1300px) {
+		flex-direction: column-reverse;
+		gap: 40px;
+	}
+}
+
+.block {
+	font-family: variables.$font-family-primary;
+	text-transform: uppercase;
+	letter-spacing: -0.05em;
+}
+
+.copyright {
+	margin-bottom: 11px;
+	font-size: 16px;
+	line-height: 20px;
+	color: white;
+
+	@media (width <= 1300px) {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+}
+
+.navigation {
+	display: flex;
+	gap: 40px;
+
+	@media (width <= 1300px) {
+		flex-direction: column;
+		gap: 20px;
+		align-items: center;
+	}
+}
+
+.link {
+	position: relative;
+	font-size: 13px;
+	line-height: 16px;
+	color: #b5b5b5;
+	transition: all 0.2s ease-in-out;
+
+	&::after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		display: block;
+		width: 100%;
+		height: 1px;
+		content: "";
+		background-color: #b5b5b5;
+		transition: all 0.2s ease-in-out;
+	}
+
+	&:hover {
+		color: white;
+
+		&::after {
+			background-color: white;
+		}
+	}
+
+	&:active {
+		opacity: 0.9;
+
+		&::after {
+			opacity: 0.9;
+		}
+	}
+}
+
+.feedback_link {
+	display: flex;
+	gap: 10px;
+	padding: 8px 18px;
+	border: 2px solid white;
+	border-radius: 5px;
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		background-color: white;
+
+		.feedback_icon {
+			filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(359deg)
+				brightness(103%) contrast(101%);
+		}
+
+		.feedback_text {
+			color: black;
+		}
+	}
+
+	&:active {
+		opacity: 0.75;
+	}
+}
+
+.feedback_icon {
+	transition: all 0.2s ease-in-out;
+}
+
+.feedback_text {
+	font-family: variables.$font-family-primary;
+	font-size: 18px;
+	line-height: 20px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: -0.05em;
+	transition: all 0.2s ease-in-out;
+
+	@media (width <= 1300px) {
+		font-size: 16px;
+	}
+}

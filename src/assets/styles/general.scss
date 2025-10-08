@@ -1,0 +1,24 @@
+@use "variables";
+@use "fonts";
+@use "swiper";
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap";
+
+:root {
+	color-scheme: only light;
+}
+
+*::selection {
+	color: white;
+	background-color: variables.$color-accent;
+}
+
+body {
+	font-family: "Times New Roman", serif;
+	font-size: 28px;
+	color: red;
+}
+
+a,
+button {
+	cursor: pointer;
+}

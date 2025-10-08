@@ -1,0 +1,61 @@
+@use "../../../assets/styles/variables";
+
+.block {
+  position: relative;
+  margin-top: 111px;
+  text-align: center;
+}
+
+.note {
+  position: absolute;
+  top: -38px;
+  right: -32px;
+
+  &::after {
+    display: block;
+    width: 15px;
+    height: 13px;
+    content: "";
+    background-image: url("../../../assets/images/note_triangle.svg");
+  }
+
+  @media (width <= 1300px) {
+    right: 50%;
+    transform: translateX(100%);
+  }
+
+  @media (width <= 490px) {
+    right: 0;
+    transform: none;
+  }
+}
+
+.note_text {
+  padding: 10px 21px;
+  font-family: variables.$font-family-primary;
+  font-size: 16px;
+  line-height: 20px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  background-color: variables.$color-primary;
+}
+
+.title {
+  font-family: variables.$font-family-primary;
+  font-size: 76px;
+  font-weight: variables.$font-weight-regular;
+  line-height: 92px;
+  color: white;
+  text-transform: uppercase;
+
+  @media (width <= 1300px) {
+    font-size: 55px;
+    font-weight: variables.$font-weight-medium;
+    line-height: 67px;
+  }
+}
+
+.title_highlighting {
+  font-weight: variables.$font-weight-bold;
+}

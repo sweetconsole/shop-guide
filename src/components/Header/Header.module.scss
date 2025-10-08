@@ -1,0 +1,48 @@
+@use "../../assets/styles/variables";
+
+.header {
+	padding-top: 22px;
+
+	@media (width <= 1300px) {
+		display: none;
+	}
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1285px;
+	margin: 0 auto;
+}
+
+.networks {
+	display: flex;
+	gap: 14px;
+	align-items: center;
+	height: 53px;
+}
+
+.become_partner {
+	padding: 13px 30px;
+	font-family: variables.$font-family-secondary;
+	font-size: 18px;
+	font-weight: variables.$font-weight-bold;
+	line-height: 20px;
+	color: white;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 5px;
+	transition: all 0.2s ease-in-out;
+
+	&:hover {
+		color: black;
+		background-color: white;
+	}
+
+	&:active {
+		opacity: 0.85;
+	}
+}

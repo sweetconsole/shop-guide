@@ -1,0 +1,88 @@
+@use "../../assets/styles/variables";
+
+.block {
+	margin-bottom: 60px;
+
+	@media (width <= 1300px) {
+		margin-bottom: 40px;
+	}
+}
+
+.title {
+	margin-bottom: 28px;
+	font-family: variables.$font-family-primary;
+	font-size: 32px;
+	font-weight: variables.$font-weight-bold;
+	line-height: 39px;
+	color: variables.$color-accent;
+	text-align: center;
+	text-transform: uppercase;
+
+	@media (width <= 1300px) {
+		margin-bottom: 60px;
+	}
+}
+
+.partners_block {
+	padding-top: 49px;
+	padding-bottom: 48px;
+	background-color: variables.$color-accent;
+}
+
+
+.become_partners {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 60px;
+	font-family: variables.$font-family-secondary;
+
+	@media (width <= 1300px) {
+		margin-top: 40px;
+
+		&:first-of-type {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.become_partners_text {
+	font-size: 24px;
+	line-height: 30px;
+	color: black;
+	text-align: center;
+
+	@media (width <= 1300px) {
+		width: 310px;
+
+		&:first-of-type {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.become_partners_button {
+	padding: 20px 90px;
+	margin-top: 30px;
+	font-size: 18px;
+	font-weight: variables.$font-weight-semi-bold;
+	line-height: 20px;
+	color: white;
+	text-transform: uppercase;
+	background-color: variables.$color-primary;
+	border: none;
+	border-radius: 10px;
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		transform: scale(1.05);
+	}
+
+	&:active {
+		opacity: 0.75;
+	}
+
+	@media (width <= 1300px) {
+		margin-top: 40px;
+	}
+}

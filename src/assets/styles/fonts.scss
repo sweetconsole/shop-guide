@@ -1,0 +1,59 @@
+/* MONTSERRAT */
+//@font-face {
+//	font-family: Montserrat;
+//	font-style: normal;
+//	font-weight: 700;
+//	src: url("../fonts/Montserrat-Bold.ttf") format("wotruetypeff2");
+//	font-display: swap;
+//}
+//
+//@font-face {
+//	font-family: Montserrat;
+//	font-style: normal;
+//	font-weight: 500;
+//	src: url("../fonts/Montserrat-Medium.ttf") format("wotruetypeff2");
+//	font-display: swap;
+//}
+//
+//@font-face {
+//	font-family: Montserrat;
+//	font-style: normal;
+//	font-weight: 400;
+//	src: url("../fonts/Montserrat-Regular.ttf") format("wotruetypeff2");
+//	font-display: swap;
+//}
+//
+//@font-face {
+//	font-family: Montserrat;
+//	font-style: normal;
+//	font-weight: 600;
+//	src: url("../fonts/Montserrat-SemiBold.ttf") format("wotruetypeff2");
+//	font-display: swap;
+//}
+
+/* FUTURA */
+@font-face {
+	font-family: Futura;
+	font-style: normal;
+	font-weight: 400;
+	src:
+		url("../fonts/futurabookc-webfont.woff2") format("woff2"),
+		url("../fonts/futurabookc-webfont.woff") format("woff"),
+		url("../fonts/futurabookc-webfont.ttf") format("truetype"),
+		url("../fonts/futurabookc-webfont.eot") format("embedded-opentype"),
+		url("../fonts/futurabookc-webfont.svg") format("svg");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Futura;
+	font-style: normal;
+	font-weight: 700;
+	src:
+		url("../fonts/futurademic-webfont.woff2") format("woff2"),
+		url("../fonts/futurademic-webfont.woff") format("woff"),
+		url("../fonts/futurademic-webfont.ttf") format("truetype"),
+		url("../fonts/futurademic-webfont.eot") format("embedded-opentype"),
+		url("../fonts/futurademic-webfont.svg") format("svg");
+	font-display: swap;
+}

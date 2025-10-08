@@ -1,0 +1,28 @@
+@use "../../assets/styles/variables";
+
+.block {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1064px;
+	margin: 0 auto;
+
+	@media (width <= 1300px) {
+		justify-content: center;
+		max-width: 100%;
+	}
+}
+
+.info {
+	@media (width <= 1300px) {
+		width: 100%;
+	}
+}
+
+.phone {
+	position: relative;
+
+	@media (width <= 1300px) {
+		display: none;
+	}
+}
